@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Quizz app</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="imageContainer"></div>
+
+<script>
+    // JavaScript code to add the image
+    window.onload = function() {
+        // The image URL
+        var imageUrl = 'online quiz.png';
+
+        // Create an image element
+        var img = document.createElement('img');
+        img.src = imageUrl;
+        img.alt = 'Description of the image';
+
+        // Add the image to the container div
+        var container = document.getElementById('imageContainer');
+        container.appendChild(img);
+    };
+</script>
+
+</body>
+</html>
